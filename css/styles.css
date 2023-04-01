@@ -19,8 +19,12 @@ body {
   margin: 0 auto;
 }
 header {
-  height: 327px;
-  background: url('../img/header.jpg') no-repeat #000;
+  height: 317px;
+  background: url('../img/header-850.jpg') no-repeat #000;
+}
+footer {
+  clear: both;
+  text-align: center;
 }
 nav ul {
   list-style: none;
@@ -43,8 +47,18 @@ nav li {
 nav a {
   text-decoration: none;
 }
-nav:after {
+nav:after, .dogInfo {
   content: "";
   display: table;
   clear:both;
+}
+.dogInfo {
+  display: none;
+}
+.dogInfo.active {
+  display: block;
+}
+.profile-photo {
+  float: left;
+  margin: 0 5px 5px;
 }
