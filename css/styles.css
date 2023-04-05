@@ -53,12 +53,25 @@ nav:after, .dogInfo {
   clear:both;
 }
 .dogInfo {
-  display: none;
+  /* display: none; */
+  margin: 12px 0;
 }
 .dogInfo.active {
   display: block;
 }
-.profile-photo {
+.dogInfo h1 {
+  font-size: 16px;
+}
+.dogInfo .profile-photo {
   float: left;
   margin: 0 5px 5px;
+}
+.dogInfo .videos {
+  clear: left;
+}
+.dogInfo iframe {
+  margin: 5px 0;
+}
+.dogInfo .videos p {
+  margin-bottom: 0;
 }
