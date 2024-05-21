@@ -55,6 +55,41 @@ nav:after, .dogInfo {
   display: table;
   clear:both;
 }
+
+.dropbtn {
+  color: #55F;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0f0f0f;
+  min-width: 140px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #55F;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #1f1f1f;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .dogInfo {
   /* display: none; */
   margin: 12px 0;
