@@ -20,7 +20,17 @@ body {
 }
 header {
   height: 317px;
-  background: url('../img/header-850.jpg') no-repeat #000;
+  background: url('../img/header2.jpg') no-repeat #000;
+  text-align: center;
+}
+header::before {
+  display: inline-block;
+  content: 'Boxers vom Norden';
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  position: relative;
+  top: 10px;
+  font-size: 30px;
 }
 footer {
   clear: both;
