@@ -5,12 +5,12 @@
   </head>
   <body>
     <div id="content">
-      
       <nav>
         <ul>
           <li>
              <a href="index.html">Home</a>
-                    <li class="dropdown">
+          </li>
+          <li class="dropdown">
             <div class="dropBtn">Male Dogs</div>
             <div class="dropdown-content">
               <a href="indy.html">Indiana Bear von Bachbett</a>
@@ -24,8 +24,14 @@
               <a href="aurora.html">Aurora vom Norden</a>
             </div>
           </li>
+          <li>
+            <a href="memory.html">Forever in Memory</a>
+          </li>
           <li class="active">
             <a href="litters.html">Litters</a>
+          </li>
+          <li>
+            <a href="raw-feeding.html">Raw Feeding</a>
           </li>
           <li>
             <a href="gallery.html">Gallery</a>
@@ -35,8 +41,19 @@
           </li>
         </ul>
       </nav>
-
-
+      <!-- <div id="litters">
+        <select id="litterSelector" onchange="selectLitter()">
+          <option value="b-litter" selected>B Litter</option>
+          <option value="a-litter">A Litter</option>
+        </select>
+        <div id="b-litter" class="litter">
+          B Litter Content Here
+        </div>
+        <div id="a-litter" class="litter hidden">
+          A Litter Content Here
+        </div>
+      </div> -->
+      
        <p>The plan for 2027 spring/summer is to breed Aurora to International Champion Boaz of Covenant Working Dogs AS/BCAT/BH-VT/CSAU/DE/DMX/FN/FD/HDJ/IGP1.  Boaz does have a recessive fawn allele so puppies from this litter can be brindle or fawn, also flashy or plain.</p>
 
        <a href="https://us.working-dog.com/dogs-details/7627528/Boaz-of-Covenant-Working-Dogs" target="_blank">Boaz on working-dog.com</a></p>
@@ -103,10 +120,27 @@
    
       
     
-          <footer>
+      <footer>
         <p>Contact <a href="mailto:boxersvomnorden@gmail.com">Email</a></p>
         <p>Copyright &copy; 2026 Boxers vom Norden. All Rights Reserved.</p>
       </footer>
     </div>
+    <script>
+      function selectLitter() {
+        const select = document.getElementById('litterSelector');
+        const selectedLitter = select.value;
+        const selectedLitterContent = document.getElementById(selectedLitter);
+        const litterWrapper = document.getElementById('litters');
+        const litters = Array.from(litterWrapper.getElementsByClassName('litter'));
+        
+        litters.forEach(div => {
+          div.classList.add('hidden');
+        });
+        if (selectedLitter && selectedLitterContent) {
+          selectedLitterContent.classList.remove('hidden');
+        }
+        console.log(selectedLitter);
+      }
+    </script>
   </body>
 </html>

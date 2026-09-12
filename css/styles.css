@@ -72,6 +72,10 @@ nav:after, .dogInfo {
   border: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
