@@ -1,0 +1,72 @@
+{
+  "name": "Arcas vom Norden",
+  "titles": "CGC",
+  "sex": "male",
+  "order": 2,
+  "memorial": false,
+  "photo": {
+    "file": "arcasservicedog.jpg",
+    "caption": "Arcas at 18 months old"
+  },
+  "facts": [
+    {
+      "label": "Born",
+      "value": "May 8, 2024"
+    },
+    {
+      "label": "Weight",
+      "value": "93 pounds"
+    },
+    {
+      "label": "Parents",
+      "value": "Cliff vom Grand Kevin x Kaya Jibaya von Bachbett"
+    },
+    {
+      "label": "Titles",
+      "value": "Canine Good Citizen (CGC), earned March 21, 2026"
+    }
+  ],
+  "bio": [
+    "Arcas was born on May 8, 2024.  He was the smallest of 3 puppies in the Cliff x Jibaya litter but quickly caught up and is now 20+ pounds larger than Aurora or Astraeus (Lugh) at 93 pounds.  He's 18 months old in the main photo, is my personal Service Dog and is absolutely perfect, my best friend. He strongly resembles his Police K9 sire Cliff vom Grand Kevin in size and head structure/facial appearance especially.  He's obsessed with balls of all sizes, types, sounds, materials -- if it's a ball, he can't stop chasing and playing with it.  Arcas easily passed his CGC test on March 21, 2026 and is now getting started on agility."
+  ],
+  "photos": [
+    {
+      "file": "pupsnursing10daysold.jpg",
+      "caption": "Cliff x Jibaya litter, 10 days old (Arcas green collar)"
+    },
+    {
+      "file": "arcas5.5weeks.jpg",
+      "caption": "5.5 weeks old"
+    },
+    {
+      "file": "arcas7.5weeks.jpg",
+      "caption": "7.5 weeks old"
+    },
+    {
+      "file": "arcas7.5weeks2.jpg",
+      "caption": "7.5 weeks old"
+    },
+    {
+      "file": "puppies8weeksvet2.jpg",
+      "caption": "8 weeks old at vet for wellness exams, Arcas in middle"
+    },
+    {
+      "file": "arcasservicedogintraining.jpg",
+      "caption": "9 months old, in training to become a Service Dog"
+    },
+    {
+      "file": "arcascgc.jpg",
+      "caption": "March 21, 2026 after earning his CGC title"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Puppy fight, 7.5 weeks old, Arcas green collar",
+      "youtube": "IjfPoYkN_Mg"
+    }
+  ],
+  "pedigree": {
+    "file": "alitterpedigree.jpg",
+    "caption": "Pedigree"
+  }
+}

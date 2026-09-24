@@ -1,0 +1,64 @@
+{
+  "name": "Indiana Bear von Bachbett",
+  "titles": "CGC, TKN",
+  "sex": "male",
+  "order": 1,
+  "memorial": false,
+  "photo": {
+    "file": "indy1.jpg",
+    "caption": "Indy"
+  },
+  "facts": [
+    {
+      "label": "Born",
+      "value": "March 1, 2020"
+    },
+    {
+      "label": "Health",
+      "value": "OFA Normal heart, OFA Good hips, DM and ARVC clear"
+    },
+    {
+      "label": "Weight",
+      "value": "75 pounds"
+    },
+    {
+      "label": "Titles",
+      "value": "Canine Good Citizen (CGC), Trick Dog Novice (TKN)"
+    }
+  ],
+  "bio": [
+    "Indy is my best buddy.  He loves to learn and train and strives to do whatever I ask of him.  Even when just relaxing around the house he constantly brings me toys, volunteering to play tug, fetch and catch.  He is also a great guard dog, very protective of me, all other dogs here and our property, with nothing happening that he does not notice and alert to.  He has great stamina and loves to go for long walks/runs in the woods around our farm and anywhere else I take him.  He is very versatile, always happy and fun-loving.  He earned the Canine Good Citizen (CGC) title at only 6 months of age, also has a Trick Dog Novice (TKN) title and is currently in training for Agility and IPO though he's a great uncle and would rather spend all his time with pups!  :)"
+  ],
+  "photos": [
+    {
+      "file": "indy22.jpg",
+      "caption": ""
+    },
+    {
+      "file": "indy3.jpg",
+      "caption": ""
+    },
+    {
+      "file": "indy4.jpg",
+      "caption": ""
+    },
+    {
+      "file": "indy5.jpg",
+      "caption": ""
+    }
+  ],
+  "videos": [
+    {
+      "title": "Novice Trick Dog submission video",
+      "youtube": "093uZL1xN2w"
+    },
+    {
+      "title": "Tackling the A-frame",
+      "youtube": "Cln1uP77z4M"
+    }
+  ],
+  "pedigree": {
+    "file": "indypedigree.jpg",
+    "caption": "Indy's pedigree"
+  }
+}
