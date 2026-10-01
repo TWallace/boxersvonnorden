@@ -1,10 +1,10 @@
 import PageTitle from '../components/PageTitle'
 import DogCard from '../components/DogCard'
-import { dogs } from '../lib/content'
+import { maleDogs, femaleDogs } from '../lib/content'
 
 export default function DogList({ sex }) {
   const title = sex === 'male' ? 'Male Dogs' : 'Female Dogs'
-  const list = dogs.filter((d) => d.sex === sex)
+  const list = sex === 'male' ? maleDogs : femaleDogs
   return (
     <div className="container page">
       <PageTitle title={title} />

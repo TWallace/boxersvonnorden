@@ -23,7 +23,7 @@ then refresh the website.
 | A litter                           | `litters/<litter>.json`    |
 | Forever in Memory intro            | `memory.json`              |
 | Raw Feeding page                   | `raw-feeding.json`         |
-| Gallery intro text                 | `gallery.json`             |
+| Gallery (intro, photos, videos)    | `gallery.json`             |
 | Contact page text                  | `contact.json`             |
 
 Tips for text:
@@ -54,7 +54,31 @@ Put a comma between photos. Only the file name goes in `"file"`, not a folder.
 
 Clicking any photo on the site opens it full screen. The left and right arrow
 keys (or the on-screen arrows, or a swipe on a phone) move between photos, and
-Esc closes it. The Gallery page collects every photo automatically.
+Esc closes it.
+
+The **Gallery page is separate from every other page** — it does not collect
+photos automatically. Add photos and videos to it yourself in `gallery.json`,
+the same way as a dog's `"photos"` list:
+
+```json
+{
+  "heading": "Gallery",
+  "intro": "A few extra glimpses of life here, beyond the dogs' own pages...",
+  "facebook": "https://www.facebook.com/teresa.boxer.7/",
+  "photos": [
+    { "file": "garden.jpg", "caption": "The vegetable garden in June" },
+    { "file": "oldboxer.jpg", "caption": "Our first Boxer, 2015" }
+  ],
+  "videos": [
+    { "title": "Morning chores", "youtube": "dQw4w9WgXcQ" }
+  ]
+}
+```
+
+Use this page for things that do not belong on a dog or litter page: livestock,
+the garden, the farm, and dogs from before the German working bloodlines.
+Don't add a photo here that is already on a dog or litter page — the idea is
+that nothing is shown twice.
 
 ## Adding a new dog
 
@@ -65,7 +89,8 @@ Esc closes it. The Gallery page collects every photo automatically.
 3. Paste, then change the details. Important fields:
    - `"sex"` is `"male"` or `"female"`. This decides which menu the dog appears in.
    - `"order"` is the position in the list (1 is first).
-   - `"memorial"`: `true` shows the dog on the Forever in Memory page too.
+   - `"memorial"`: `true` moves the dog to the Forever in Memory page **instead
+     of** the Male/Female Dogs list (not in addition to it).
      Add `"passed": "April 2025"` to show when.
 4. The dog appears in the menu automatically.
 

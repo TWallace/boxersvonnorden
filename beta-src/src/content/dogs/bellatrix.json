@@ -1,0 +1,34 @@
+{
+  "name": "Bellatrix vom Norden",
+  "titles": "",
+  "sex": "female",
+  "order": 3,
+  "memorial": false,
+  "photo": {
+    "file": "puppylineup.jpg",
+    "caption": "Bellatrix (far right) with her littermates, 4 weeks old"
+  },
+  "facts": [
+    {
+      "label": "Born",
+      "value": "April 28, 2026"
+    },
+    {
+      "label": "Parents",
+      "value": "Ivo vom Hafen x Aurora vom Norden"
+    },
+    {
+      "label": "Color",
+      "value": "Reverse brindle"
+    }
+  ],
+  "bio": [
+    "Bellatrix is a beautiful reverse brindle puppy from Aurora's first litter by Ivo vom Hafen. She is developing a good, stable temperament, and the plan is to breed her for the first time in 2028 if she passes health testing and earns at least a CGC title."
+  ],
+  "photos": [
+    {
+      "file": "blitter8days.jpg",
+      "caption": "Bellatrix's litter, 8 days old"
+    }
+  ]
+}

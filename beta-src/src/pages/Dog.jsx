@@ -18,7 +18,11 @@ export default function Dog({ slug }) {
     <div className="container page dog-page">
       <PageTitle title={dog.name} />
       <p className="crumbs">
-        <Link to={dog.sex === 'male' ? '/male-dogs' : '/female-dogs'}>{dog.sex === 'male' ? 'Male Dogs' : 'Female Dogs'}</Link>
+        {dog.memorial ? (
+          <Link to="/memory">Forever in Memory</Link>
+        ) : (
+          <Link to={dog.sex === 'male' ? '/male-dogs' : '/female-dogs'}>{dog.sex === 'male' ? 'Male Dogs' : 'Female Dogs'}</Link>
+        )}
       </p>
       <h1>{fullName(dog)}</h1>
       {dog.memorial && <p className="memorial-badge">Forever in our hearts{dog.passed ? ` · ${dog.passed}` : ''}</p>}

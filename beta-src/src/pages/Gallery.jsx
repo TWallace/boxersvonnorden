@@ -1,8 +1,10 @@
 import PageTitle from '../components/PageTitle'
 import Photo from '../components/Photo'
-import { galleryPage, allPhotos } from '../lib/content'
+import Videos from '../components/Videos'
+import { galleryPage } from '../lib/content'
 
-const photos = allPhotos()
+const photos = galleryPage.photos || []
+const videos = galleryPage.videos || []
 
 export default function Gallery() {
   return (
@@ -15,11 +17,18 @@ export default function Gallery() {
           <a href={galleryPage.facebook} target="_blank" rel="noopener noreferrer">Follow us on Facebook</a>
         )}
       </p>
-      <div className="masonry">
-        {photos.map((img, i) => (
-          <Photo key={img.file} image={img} set={photos} index={i} />
-        ))}
-      </div>
+
+      {photos.length > 0 ? (
+        <div className="masonry">
+          {photos.map((img, i) => (
+            <Photo key={img.file} image={img} set={photos} index={i} />
+          ))}
+        </div>
+      ) : (
+        <p className="muted-note">More photos are coming soon.</p>
+      )}
+
+      <Videos videos={videos} />
     </div>
   )
 }

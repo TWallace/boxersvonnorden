@@ -21,25 +21,9 @@ export const litters = Object.entries(litterModules)
   .map(([path, litter]) => ({ ...litter, id: slugFromPath(path) }))
   .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
 
-export const maleDogs = dogs.filter((d) => d.sex === 'male')
-export const femaleDogs = dogs.filter((d) => d.sex === 'female')
+// A dog marked "memorial" appears only on the Forever in Memory page, not in the Male/Female Dogs lists.
+export const maleDogs = dogs.filter((d) => d.sex === 'male' && !d.memorial)
+export const femaleDogs = dogs.filter((d) => d.sex === 'female' && !d.memorial)
 export const memorialDogs = dogs.filter((d) => d.memorial)
 
 export const fullName = (dog) => (dog.titles ? `${dog.name}, ${dog.titles}` : dog.name)
-
-// Every distinct photo on the site, for the Gallery page.
-export function allPhotos() {
-  const seen = new Set()
-  const out = []
-  const add = (img, source) => {
-    if (!img?.file || seen.has(img.file)) return
-    seen.add(img.file)
-    out.push({ ...img, source })
-  }
-  dogs.forEach((d) => {
-    add(d.photo, d.name)
-    ;(d.photos || []).forEach((p) => add(p, d.name))
-  })
-  litters.forEach((l) => (l.photos || []).forEach((p) => add(p, l.title)))
-  return out
-}
