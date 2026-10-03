@@ -1,0 +1,14 @@
+# Optional: add these lines to the .htaccess file at the root of the site on Hostinger,
+# after going live, so old bookmarked/linked URLs forward to the new pages.
+# This is untested on Hostinger - verify it works after adding it, and remove it
+# if it causes problems (you can always delete these lines and keep the rest of
+# the .htaccess file as it was).
+
+RewriteEngine On
+RewriteRule ^indy\.html$ /#/dogs/indy [R=301,L,NE]
+RewriteRule ^arcas\.html$ /#/dogs/arcas [R=301,L,NE]
+RewriteRule ^jibaya\.html$ /#/dogs/jibaya [R=301,L,NE]
+RewriteRule ^aurora\.html$ /#/dogs/aurora [R=301,L,NE]
+RewriteRule ^litters\.html$ /#/litters [R=301,L,NE]
+RewriteRule ^gallery\.html$ /#/gallery [R=301,L,NE]
+RewriteRule ^contact\.html$ /#/contact [R=301,L,NE]
